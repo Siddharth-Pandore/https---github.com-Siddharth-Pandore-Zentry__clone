@@ -2,5 +2,32 @@
 
 2) npm install -D tailwindcss postcss autoprefixer
    npx tailwindcss init -p
-   change the tailwind.config.js to the recomended one on docs.
-   
+   replace the tailwind.config.js file with the file mentioned on website
+
+3) inside index.css add
+   @tailwind base;
+   @tailwind components;
+   @tailwind utilities;   
+
+4) also add 
+   @layer base {
+    @font-face {
+        font-family: 'circular-web';
+        src: url('/fonts/circularweb-book.woff2') format('woff2')
+    }
+
+    other font faces;
+   }   
+
+ 5) For react icons
+    npm install react-icons --save  
+
+ 6) For animation we use GSAP 
+    npm install @gsap/react gsap@3.12.5  
+
+ 7) For the hero section to change its shape
+    while scroll we are going to use (clip-path)    
+    CSS clip-path maker
+
+ 8) react-use library for navbar black strip   
+    npm i react-use@17.5.1
